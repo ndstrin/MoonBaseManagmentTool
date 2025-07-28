@@ -42,6 +42,8 @@
             this.label1 = new System.Windows.Forms.Label();
             this.BTN_ProcessOre = new System.Windows.Forms.Button();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.LB_BasePower_Value = new System.Windows.Forms.Label();
+            this.label10 = new System.Windows.Forms.Label();
             this.LB_Base_ActiveWorkers = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.LB_Base_Workers_Value = new System.Windows.Forms.Label();
@@ -60,23 +62,29 @@
             this.saveToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.loadGameToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.progressBar_EXP = new System.Windows.Forms.ProgressBar();
-            this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.grBox_Workers = new System.Windows.Forms.GroupBox();
+            this.GRBox_Solar = new System.Windows.Forms.GroupBox();
+            this.BTN_SolarUpgrade = new System.Windows.Forms.Button();
+            this.LB_SolarProduction_Value = new System.Windows.Forms.Label();
+            this.LB_LevelSolar_Value = new System.Windows.Forms.Label();
+            this.label16 = new System.Windows.Forms.Label();
+            this.label17 = new System.Windows.Forms.Label();
             this.grbox_Resources.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.ActiveMiners)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ProcessingWorkers)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            this.groupBox2.SuspendLayout();
+            this.grBox_Workers.SuspendLayout();
+            this.GRBox_Solar.SuspendLayout();
             this.SuspendLayout();
             // 
             // btn_Mine
             // 
             this.btn_Mine.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Mine.Enabled = false;
-            this.btn_Mine.Location = new System.Drawing.Point(7, 288);
-            this.btn_Mine.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.btn_Mine.Location = new System.Drawing.Point(5, 187);
             this.btn_Mine.Name = "btn_Mine";
-            this.btn_Mine.Size = new System.Drawing.Size(168, 35);
+            this.btn_Mine.Size = new System.Drawing.Size(112, 23);
             this.btn_Mine.TabIndex = 0;
             this.btn_Mine.Text = "Mine Ore";
             this.btn_Mine.UseVisualStyleBackColor = false;
@@ -95,11 +103,9 @@
             this.grbox_Resources.Controls.Add(this.label1);
             this.grbox_Resources.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.grbox_Resources.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grbox_Resources.Location = new System.Drawing.Point(4, 35);
-            this.grbox_Resources.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.grbox_Resources.Location = new System.Drawing.Point(3, 23);
             this.grbox_Resources.Name = "grbox_Resources";
-            this.grbox_Resources.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.grbox_Resources.Size = new System.Drawing.Size(168, 194);
+            this.grbox_Resources.Size = new System.Drawing.Size(112, 129);
             this.grbox_Resources.TabIndex = 1;
             this.grbox_Resources.TabStop = false;
             this.grbox_Resources.Text = "Resources";
@@ -107,40 +113,36 @@
             // LB_Resource_Ore_Value
             // 
             this.LB_Resource_Ore_Value.AutoSize = true;
-            this.LB_Resource_Ore_Value.Location = new System.Drawing.Point(114, 151);
-            this.LB_Resource_Ore_Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_Resource_Ore_Value.Location = new System.Drawing.Point(76, 98);
             this.LB_Resource_Ore_Value.Name = "LB_Resource_Ore_Value";
-            this.LB_Resource_Ore_Value.Size = new System.Drawing.Size(18, 20);
+            this.LB_Resource_Ore_Value.Size = new System.Drawing.Size(13, 13);
             this.LB_Resource_Ore_Value.TabIndex = 7;
             this.LB_Resource_Ore_Value.Text = "0";
             // 
             // LB_Resouce_Water_Value
             // 
             this.LB_Resouce_Water_Value.AutoSize = true;
-            this.LB_Resouce_Water_Value.Location = new System.Drawing.Point(114, 112);
-            this.LB_Resouce_Water_Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_Resouce_Water_Value.Location = new System.Drawing.Point(76, 73);
             this.LB_Resouce_Water_Value.Name = "LB_Resouce_Water_Value";
-            this.LB_Resouce_Water_Value.Size = new System.Drawing.Size(18, 20);
+            this.LB_Resouce_Water_Value.Size = new System.Drawing.Size(13, 13);
             this.LB_Resouce_Water_Value.TabIndex = 6;
             this.LB_Resouce_Water_Value.Text = "0";
             // 
             // LB_Resource_Food_Value
             // 
             this.LB_Resource_Food_Value.AutoSize = true;
-            this.LB_Resource_Food_Value.Location = new System.Drawing.Point(114, 77);
-            this.LB_Resource_Food_Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_Resource_Food_Value.Location = new System.Drawing.Point(76, 50);
             this.LB_Resource_Food_Value.Name = "LB_Resource_Food_Value";
-            this.LB_Resource_Food_Value.Size = new System.Drawing.Size(18, 20);
+            this.LB_Resource_Food_Value.Size = new System.Drawing.Size(13, 13);
             this.LB_Resource_Food_Value.TabIndex = 5;
             this.LB_Resource_Food_Value.Text = "0";
             // 
             // LB_Resource_Oxygen_Value
             // 
             this.LB_Resource_Oxygen_Value.AutoSize = true;
-            this.LB_Resource_Oxygen_Value.Location = new System.Drawing.Point(114, 43);
-            this.LB_Resource_Oxygen_Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_Resource_Oxygen_Value.Location = new System.Drawing.Point(76, 28);
             this.LB_Resource_Oxygen_Value.Name = "LB_Resource_Oxygen_Value";
-            this.LB_Resource_Oxygen_Value.Size = new System.Drawing.Size(18, 20);
+            this.LB_Resource_Oxygen_Value.Size = new System.Drawing.Size(13, 13);
             this.LB_Resource_Oxygen_Value.TabIndex = 4;
             this.LB_Resource_Oxygen_Value.Text = "0";
             // 
@@ -148,10 +150,9 @@
             // 
             this.label4.AutoSize = true;
             this.label4.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label4.Location = new System.Drawing.Point(22, 151);
-            this.label4.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label4.Location = new System.Drawing.Point(15, 98);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(39, 20);
+            this.label4.Size = new System.Drawing.Size(27, 13);
             this.label4.TabIndex = 3;
             this.label4.Text = "Ore:";
             // 
@@ -159,10 +160,9 @@
             // 
             this.label3.AutoSize = true;
             this.label3.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label3.Location = new System.Drawing.Point(22, 112);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Location = new System.Drawing.Point(15, 73);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(60, 20);
+            this.label3.Size = new System.Drawing.Size(42, 13);
             this.label3.TabIndex = 2;
             this.label3.Text = "Water: ";
             // 
@@ -170,10 +170,9 @@
             // 
             this.label2.AutoSize = true;
             this.label2.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label2.Location = new System.Drawing.Point(22, 77);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Location = new System.Drawing.Point(15, 50);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(54, 20);
+            this.label2.Size = new System.Drawing.Size(37, 13);
             this.label2.TabIndex = 1;
             this.label2.Text = "Food: ";
             // 
@@ -181,10 +180,9 @@
             // 
             this.label1.AutoSize = true;
             this.label1.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label1.Location = new System.Drawing.Point(22, 43);
-            this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label1.Location = new System.Drawing.Point(15, 28);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(70, 20);
+            this.label1.Size = new System.Drawing.Size(49, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Oxygen: ";
             // 
@@ -192,10 +190,9 @@
             // 
             this.BTN_ProcessOre.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BTN_ProcessOre.Enabled = false;
-            this.BTN_ProcessOre.Location = new System.Drawing.Point(7, 348);
-            this.BTN_ProcessOre.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.BTN_ProcessOre.Location = new System.Drawing.Point(5, 226);
             this.BTN_ProcessOre.Name = "BTN_ProcessOre";
-            this.BTN_ProcessOre.Size = new System.Drawing.Size(168, 35);
+            this.BTN_ProcessOre.Size = new System.Drawing.Size(112, 23);
             this.BTN_ProcessOre.TabIndex = 2;
             this.BTN_ProcessOre.Text = "Process Ore";
             this.BTN_ProcessOre.UseVisualStyleBackColor = false;
@@ -204,6 +201,8 @@
             // groupBox1
             // 
             this.groupBox1.BackColor = System.Drawing.Color.Transparent;
+            this.groupBox1.Controls.Add(this.LB_BasePower_Value);
+            this.groupBox1.Controls.Add(this.label10);
             this.groupBox1.Controls.Add(this.LB_Base_ActiveWorkers);
             this.groupBox1.Controls.Add(this.label5);
             this.groupBox1.Controls.Add(this.LB_Base_Workers_Value);
@@ -212,22 +211,38 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox1.Location = new System.Drawing.Point(630, 305);
-            this.groupBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.groupBox1.Location = new System.Drawing.Point(420, 170);
             this.groupBox1.Name = "groupBox1";
-            this.groupBox1.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox1.Size = new System.Drawing.Size(186, 150);
+            this.groupBox1.Size = new System.Drawing.Size(124, 126);
             this.groupBox1.TabIndex = 4;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Base";
             // 
+            // LB_BasePower_Value
+            // 
+            this.LB_BasePower_Value.AutoSize = true;
+            this.LB_BasePower_Value.Location = new System.Drawing.Point(99, 91);
+            this.LB_BasePower_Value.Name = "LB_BasePower_Value";
+            this.LB_BasePower_Value.Size = new System.Drawing.Size(13, 13);
+            this.LB_BasePower_Value.TabIndex = 9;
+            this.LB_BasePower_Value.Text = "0";
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label10.Location = new System.Drawing.Point(15, 91);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(43, 13);
+            this.label10.TabIndex = 8;
+            this.label10.Text = "Power: ";
+            // 
             // LB_Base_ActiveWorkers
             // 
             this.LB_Base_ActiveWorkers.AutoSize = true;
-            this.LB_Base_ActiveWorkers.Location = new System.Drawing.Point(148, 112);
-            this.LB_Base_ActiveWorkers.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_Base_ActiveWorkers.Location = new System.Drawing.Point(99, 73);
             this.LB_Base_ActiveWorkers.Name = "LB_Base_ActiveWorkers";
-            this.LB_Base_ActiveWorkers.Size = new System.Drawing.Size(18, 20);
+            this.LB_Base_ActiveWorkers.Size = new System.Drawing.Size(13, 13);
             this.LB_Base_ActiveWorkers.TabIndex = 5;
             this.LB_Base_ActiveWorkers.Text = "0";
             // 
@@ -235,30 +250,27 @@
             // 
             this.label5.AutoSize = true;
             this.label5.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label5.Location = new System.Drawing.Point(22, 112);
-            this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label5.Location = new System.Drawing.Point(15, 73);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(123, 20);
+            this.label5.Size = new System.Drawing.Size(86, 13);
             this.label5.TabIndex = 4;
             this.label5.Text = "Active Workers: ";
             // 
             // LB_Base_Workers_Value
             // 
             this.LB_Base_Workers_Value.AutoSize = true;
-            this.LB_Base_Workers_Value.Location = new System.Drawing.Point(148, 77);
-            this.LB_Base_Workers_Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_Base_Workers_Value.Location = new System.Drawing.Point(99, 50);
             this.LB_Base_Workers_Value.Name = "LB_Base_Workers_Value";
-            this.LB_Base_Workers_Value.Size = new System.Drawing.Size(18, 20);
+            this.LB_Base_Workers_Value.Size = new System.Drawing.Size(13, 13);
             this.LB_Base_Workers_Value.TabIndex = 3;
             this.LB_Base_Workers_Value.Text = "0";
             // 
             // LB_Base_Level_Value
             // 
             this.LB_Base_Level_Value.AutoSize = true;
-            this.LB_Base_Level_Value.Location = new System.Drawing.Point(148, 43);
-            this.LB_Base_Level_Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_Base_Level_Value.Location = new System.Drawing.Point(99, 28);
             this.LB_Base_Level_Value.Name = "LB_Base_Level_Value";
-            this.LB_Base_Level_Value.Size = new System.Drawing.Size(18, 20);
+            this.LB_Base_Level_Value.Size = new System.Drawing.Size(13, 13);
             this.LB_Base_Level_Value.TabIndex = 2;
             this.LB_Base_Level_Value.Text = "0";
             // 
@@ -266,10 +278,9 @@
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label7.Location = new System.Drawing.Point(22, 77);
-            this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label7.Location = new System.Drawing.Point(15, 50);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(115, 20);
+            this.label7.Size = new System.Drawing.Size(80, 13);
             this.label7.TabIndex = 1;
             this.label7.Text = "Total Workers: ";
             // 
@@ -277,10 +288,9 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.MenuHighlight;
-            this.label8.Location = new System.Drawing.Point(22, 43);
-            this.label8.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label8.Location = new System.Drawing.Point(15, 28);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(54, 20);
+            this.label8.Size = new System.Drawing.Size(39, 13);
             this.label8.TabIndex = 0;
             this.label8.Text = "Level: ";
             // 
@@ -302,27 +312,25 @@
             this.backgroundWorker_ProcessOre.WorkerReportsProgress = true;
             this.backgroundWorker_ProcessOre.DoWork += new System.ComponentModel.DoWorkEventHandler(this.backgroundWorker_ProcessOre_DoWork);
             this.backgroundWorker_ProcessOre.ProgressChanged += new System.ComponentModel.ProgressChangedEventHandler(this.backgroundWorker_ProcessOre_ProgressChanged);
+            this.backgroundWorker_ProcessOre.RunWorkerCompleted += new System.ComponentModel.RunWorkerCompletedEventHandler(this.backgroundWorker_ProcessOre_RunWorkerCompleted);
             // 
             // ActiveMiners
             // 
             this.ActiveMiners.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ActiveMiners.Location = new System.Drawing.Point(8, 29);
-            this.ActiveMiners.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ActiveMiners.Location = new System.Drawing.Point(5, 19);
             this.ActiveMiners.Name = "ActiveMiners";
             this.ActiveMiners.ReadOnly = true;
-            this.ActiveMiners.Size = new System.Drawing.Size(78, 26);
+            this.ActiveMiners.Size = new System.Drawing.Size(52, 20);
             this.ActiveMiners.TabIndex = 5;
             this.ActiveMiners.ValueChanged += new System.EventHandler(this.ActiveMiners_ValueChanged);
-            this.ActiveMiners.Validating += new System.ComponentModel.CancelEventHandler(this.ActiveMiners_Validating);
             // 
             // ProcessingWorkers
             // 
             this.ProcessingWorkers.BackColor = System.Drawing.SystemColors.WindowFrame;
-            this.ProcessingWorkers.Location = new System.Drawing.Point(8, 93);
-            this.ProcessingWorkers.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.ProcessingWorkers.Location = new System.Drawing.Point(5, 60);
             this.ProcessingWorkers.Name = "ProcessingWorkers";
             this.ProcessingWorkers.ReadOnly = true;
-            this.ProcessingWorkers.Size = new System.Drawing.Size(78, 26);
+            this.ProcessingWorkers.Size = new System.Drawing.Size(52, 20);
             this.ProcessingWorkers.TabIndex = 6;
             this.ProcessingWorkers.ValueChanged += new System.EventHandler(this.ProcessingWorkers_ValueChanged);
             // 
@@ -332,10 +340,9 @@
             this.label6.BackColor = System.Drawing.SystemColors.GrayText;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label6.Location = new System.Drawing.Point(442, 2);
-            this.label6.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label6.Location = new System.Drawing.Point(295, 1);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(74, 29);
+            this.label6.Size = new System.Drawing.Size(49, 20);
             this.label6.TabIndex = 8;
             this.label6.Text = "EXP: ";
             // 
@@ -345,23 +352,22 @@
             this.LB_EXP_Value.BackColor = System.Drawing.SystemColors.GrayText;
             this.LB_EXP_Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_EXP_Value.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.LB_EXP_Value.Location = new System.Drawing.Point(535, 2);
-            this.LB_EXP_Value.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.LB_EXP_Value.Location = new System.Drawing.Point(357, 1);
             this.LB_EXP_Value.Name = "LB_EXP_Value";
-            this.LB_EXP_Value.Size = new System.Drawing.Size(26, 29);
+            this.LB_EXP_Value.Size = new System.Drawing.Size(18, 20);
             this.LB_EXP_Value.TabIndex = 9;
             this.LB_EXP_Value.Text = "0";
             // 
             // menuStrip1
             // 
             this.menuStrip1.BackColor = System.Drawing.SystemColors.GrayText;
-            this.menuStrip1.GripMargin = new System.Windows.Forms.Padding(2, 2, 0, 2);
             this.menuStrip1.ImageScalingSize = new System.Drawing.Size(24, 24);
             this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
             this.Menu_File});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
-            this.menuStrip1.Size = new System.Drawing.Size(816, 33);
+            this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
+            this.menuStrip1.Size = new System.Drawing.Size(544, 24);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -372,56 +378,123 @@
             this.saveToolStripMenuItem,
             this.loadGameToolStripMenuItem});
             this.Menu_File.Name = "Menu_File";
-            this.Menu_File.Size = new System.Drawing.Size(54, 29);
+            this.Menu_File.Size = new System.Drawing.Size(37, 22);
             this.Menu_File.Text = "File";
             // 
             // saveToolStripMenuItem
             // 
             this.saveToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.saveToolStripMenuItem.Name = "saveToolStripMenuItem";
-            this.saveToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.saveToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.saveToolStripMenuItem.Text = "Save";
             // 
             // loadGameToolStripMenuItem
             // 
             this.loadGameToolStripMenuItem.BackColor = System.Drawing.SystemColors.ControlDark;
             this.loadGameToolStripMenuItem.Name = "loadGameToolStripMenuItem";
-            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(270, 34);
+            this.loadGameToolStripMenuItem.Size = new System.Drawing.Size(134, 22);
             this.loadGameToolStripMenuItem.Text = "Load Game";
             // 
             // progressBar_EXP
             // 
             this.progressBar_EXP.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar_EXP.Location = new System.Drawing.Point(604, 4);
+            this.progressBar_EXP.Location = new System.Drawing.Point(403, 3);
+            this.progressBar_EXP.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar_EXP.Name = "progressBar_EXP";
-            this.progressBar_EXP.Size = new System.Drawing.Size(199, 23);
+            this.progressBar_EXP.Size = new System.Drawing.Size(133, 15);
             this.progressBar_EXP.TabIndex = 11;
             // 
-            // groupBox2
+            // grBox_Workers
             // 
-            this.groupBox2.BackColor = System.Drawing.Color.Transparent;
-            this.groupBox2.Controls.Add(this.ActiveMiners);
-            this.groupBox2.Controls.Add(this.ProcessingWorkers);
-            this.groupBox2.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
-            this.groupBox2.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox2.Location = new System.Drawing.Point(202, 261);
-            this.groupBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Padding = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.groupBox2.Size = new System.Drawing.Size(103, 142);
-            this.groupBox2.TabIndex = 8;
-            this.groupBox2.TabStop = false;
-            this.groupBox2.Text = "Workers";
+            this.grBox_Workers.BackColor = System.Drawing.Color.Transparent;
+            this.grBox_Workers.Controls.Add(this.ActiveMiners);
+            this.grBox_Workers.Controls.Add(this.ProcessingWorkers);
+            this.grBox_Workers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.grBox_Workers.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.grBox_Workers.Location = new System.Drawing.Point(135, 170);
+            this.grBox_Workers.Name = "grBox_Workers";
+            this.grBox_Workers.Size = new System.Drawing.Size(69, 92);
+            this.grBox_Workers.TabIndex = 8;
+            this.grBox_Workers.TabStop = false;
+            this.grBox_Workers.Text = "Workers";
+            // 
+            // GRBox_Solar
+            // 
+            this.GRBox_Solar.BackColor = System.Drawing.Color.Transparent;
+            this.GRBox_Solar.Controls.Add(this.BTN_SolarUpgrade);
+            this.GRBox_Solar.Controls.Add(this.LB_SolarProduction_Value);
+            this.GRBox_Solar.Controls.Add(this.LB_LevelSolar_Value);
+            this.GRBox_Solar.Controls.Add(this.label16);
+            this.GRBox_Solar.Controls.Add(this.label17);
+            this.GRBox_Solar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+            this.GRBox_Solar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
+            this.GRBox_Solar.Location = new System.Drawing.Point(420, 31);
+            this.GRBox_Solar.Name = "GRBox_Solar";
+            this.GRBox_Solar.Size = new System.Drawing.Size(124, 103);
+            this.GRBox_Solar.TabIndex = 8;
+            this.GRBox_Solar.TabStop = false;
+            this.GRBox_Solar.Text = "Solar Power";
+            // 
+            // BTN_SolarUpgrade
+            // 
+            this.BTN_SolarUpgrade.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.BTN_SolarUpgrade.Enabled = false;
+            this.BTN_SolarUpgrade.Location = new System.Drawing.Point(6, 67);
+            this.BTN_SolarUpgrade.Name = "BTN_SolarUpgrade";
+            this.BTN_SolarUpgrade.Size = new System.Drawing.Size(112, 23);
+            this.BTN_SolarUpgrade.TabIndex = 12;
+            this.BTN_SolarUpgrade.Text = "Upgrade";
+            this.BTN_SolarUpgrade.UseVisualStyleBackColor = false;
+            this.BTN_SolarUpgrade.Click += new System.EventHandler(this.BTN_SolarUpgrade_Click);
+            // 
+            // LB_SolarProduction_Value
+            // 
+            this.LB_SolarProduction_Value.AutoSize = true;
+            this.LB_SolarProduction_Value.Location = new System.Drawing.Point(90, 39);
+            this.LB_SolarProduction_Value.Name = "LB_SolarProduction_Value";
+            this.LB_SolarProduction_Value.Size = new System.Drawing.Size(13, 13);
+            this.LB_SolarProduction_Value.TabIndex = 3;
+            this.LB_SolarProduction_Value.Text = "0";
+            // 
+            // LB_LevelSolar_Value
+            // 
+            this.LB_LevelSolar_Value.AutoSize = true;
+            this.LB_LevelSolar_Value.Location = new System.Drawing.Point(90, 17);
+            this.LB_LevelSolar_Value.Name = "LB_LevelSolar_Value";
+            this.LB_LevelSolar_Value.Size = new System.Drawing.Size(13, 13);
+            this.LB_LevelSolar_Value.TabIndex = 2;
+            this.LB_LevelSolar_Value.Text = "0";
+            // 
+            // label16
+            // 
+            this.label16.AutoSize = true;
+            this.label16.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label16.Location = new System.Drawing.Point(6, 39);
+            this.label16.Name = "label16";
+            this.label16.Size = new System.Drawing.Size(61, 13);
+            this.label16.TabIndex = 1;
+            this.label16.Text = "Production:";
+            // 
+            // label17
+            // 
+            this.label17.AutoSize = true;
+            this.label17.ForeColor = System.Drawing.SystemColors.MenuHighlight;
+            this.label17.Location = new System.Drawing.Point(6, 16);
+            this.label17.Name = "label17";
+            this.label17.Size = new System.Drawing.Size(39, 13);
+            this.label17.TabIndex = 0;
+            this.label17.Text = "Level: ";
             // 
             // Form_Main
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(816, 457);
-            this.Controls.Add(this.groupBox2);
+            this.ClientSize = new System.Drawing.Size(544, 297);
+            this.Controls.Add(this.GRBox_Solar);
+            this.Controls.Add(this.grBox_Workers);
             this.Controls.Add(this.progressBar_EXP);
             this.Controls.Add(this.LB_EXP_Value);
             this.Controls.Add(this.label6);
@@ -435,12 +508,10 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.MainMenuStrip = this.menuStrip1;
-            this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.MaximizeBox = false;
             this.MinimizeBox = false;
             this.Name = "Form_Main";
             this.Text = "Moon Base SIM";
-            this.Load += new System.EventHandler(this.Form_Main_Load);
             this.grbox_Resources.ResumeLayout(false);
             this.grbox_Resources.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -449,7 +520,9 @@
             ((System.ComponentModel.ISupportInitialize)(this.ProcessingWorkers)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            this.groupBox2.ResumeLayout(false);
+            this.grBox_Workers.ResumeLayout(false);
+            this.GRBox_Solar.ResumeLayout(false);
+            this.GRBox_Solar.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -487,7 +560,15 @@
         private System.Windows.Forms.ToolStripMenuItem saveToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem loadGameToolStripMenuItem;
         private System.Windows.Forms.ProgressBar progressBar_EXP;
-        private System.Windows.Forms.GroupBox groupBox2;
+        private System.Windows.Forms.GroupBox grBox_Workers;
+        private System.Windows.Forms.GroupBox GRBox_Solar;
+        private System.Windows.Forms.Label LB_SolarProduction_Value;
+        private System.Windows.Forms.Label LB_LevelSolar_Value;
+        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label label17;
+        private System.Windows.Forms.Button BTN_SolarUpgrade;
+        private System.Windows.Forms.Label LB_BasePower_Value;
+        private System.Windows.Forms.Label label10;
     }
 }
 
