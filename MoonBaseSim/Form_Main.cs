@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using People;
 using Resources;
 
 
@@ -295,6 +296,17 @@ namespace MoonBaseSim
         private void backgroundWorker_ProcessOre_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
         {
             Logger.Info("Processing Ore Stopped");
+        }
+
+        private void ActiveMiners_Validated(object sender, EventArgs e)
+        {
+
+            
+        }
+
+        private void ActiveMiners_Validating(object sender, CancelEventArgs e)
+        {
+            //ActiveMiners.Maximum = Sources.CurrentWorkers.Minners + Sources.OpenWorkers(); 
         }
     }
 }

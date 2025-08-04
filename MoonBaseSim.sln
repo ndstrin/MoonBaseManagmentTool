@@ -7,6 +7,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MoonBaseSim", "MoonBaseSim\
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Resources", "Resources\Resources.csproj", "{F06EDB8D-6137-49BB-A4C9-A0EC4045BD32}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "People", "People\People.csproj", "{81EA2DF2-1B7F-4C5A-A705-DAA5160D60DD}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -21,6 +23,10 @@ Global
 		{F06EDB8D-6137-49BB-A4C9-A0EC4045BD32}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{F06EDB8D-6137-49BB-A4C9-A0EC4045BD32}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{F06EDB8D-6137-49BB-A4C9-A0EC4045BD32}.Release|Any CPU.Build.0 = Release|Any CPU
+		{81EA2DF2-1B7F-4C5A-A705-DAA5160D60DD}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{81EA2DF2-1B7F-4C5A-A705-DAA5160D60DD}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{81EA2DF2-1B7F-4C5A-A705-DAA5160D60DD}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{81EA2DF2-1B7F-4C5A-A705-DAA5160D60DD}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

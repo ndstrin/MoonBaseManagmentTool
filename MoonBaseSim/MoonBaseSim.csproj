@@ -148,6 +148,10 @@
     <Content Include="Moon.png" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\People\People.csproj">
+      <Project>{81ea2df2-1b7f-4c5a-a705-daa5160d60dd}</Project>
+      <Name>People</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Resources\Resources.csproj">
       <Project>{f06edb8d-6137-49bb-a4c9-a0ec4045bd32}</Project>
       <Name>Resources</Name>

@@ -82,7 +82,7 @@
             // 
             this.btn_Mine.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.btn_Mine.Enabled = false;
-            this.btn_Mine.Location = new System.Drawing.Point(5, 187);
+            this.btn_Mine.Location = new System.Drawing.Point(12, 540);
             this.btn_Mine.Name = "btn_Mine";
             this.btn_Mine.Size = new System.Drawing.Size(112, 23);
             this.btn_Mine.TabIndex = 0;
@@ -190,7 +190,7 @@
             // 
             this.BTN_ProcessOre.BackColor = System.Drawing.SystemColors.ActiveCaption;
             this.BTN_ProcessOre.Enabled = false;
-            this.BTN_ProcessOre.Location = new System.Drawing.Point(5, 226);
+            this.BTN_ProcessOre.Location = new System.Drawing.Point(12, 579);
             this.BTN_ProcessOre.Name = "BTN_ProcessOre";
             this.BTN_ProcessOre.Size = new System.Drawing.Size(112, 23);
             this.BTN_ProcessOre.TabIndex = 2;
@@ -211,7 +211,7 @@
             this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.groupBox1.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.groupBox1.Location = new System.Drawing.Point(420, 170);
+            this.groupBox1.Location = new System.Drawing.Point(935, 31);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(124, 126);
             this.groupBox1.TabIndex = 4;
@@ -323,6 +323,8 @@
             this.ActiveMiners.Size = new System.Drawing.Size(52, 20);
             this.ActiveMiners.TabIndex = 5;
             this.ActiveMiners.ValueChanged += new System.EventHandler(this.ActiveMiners_ValueChanged);
+            this.ActiveMiners.Validating += new System.ComponentModel.CancelEventHandler(this.ActiveMiners_Validating);
+            this.ActiveMiners.Validated += new System.EventHandler(this.ActiveMiners_Validated);
             // 
             // ProcessingWorkers
             // 
@@ -340,7 +342,7 @@
             this.label6.BackColor = System.Drawing.SystemColors.GrayText;
             this.label6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label6.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.label6.Location = new System.Drawing.Point(295, 1);
+            this.label6.Location = new System.Drawing.Point(849, 1);
             this.label6.Name = "label6";
             this.label6.Size = new System.Drawing.Size(49, 20);
             this.label6.TabIndex = 8;
@@ -352,7 +354,7 @@
             this.LB_EXP_Value.BackColor = System.Drawing.SystemColors.GrayText;
             this.LB_EXP_Value.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.LB_EXP_Value.ForeColor = System.Drawing.SystemColors.InfoText;
-            this.LB_EXP_Value.Location = new System.Drawing.Point(357, 1);
+            this.LB_EXP_Value.Location = new System.Drawing.Point(911, 1);
             this.LB_EXP_Value.Name = "LB_EXP_Value";
             this.LB_EXP_Value.Size = new System.Drawing.Size(18, 20);
             this.LB_EXP_Value.TabIndex = 9;
@@ -367,7 +369,7 @@
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Padding = new System.Windows.Forms.Padding(4, 1, 0, 1);
-            this.menuStrip1.Size = new System.Drawing.Size(544, 24);
+            this.menuStrip1.Size = new System.Drawing.Size(1071, 24);
             this.menuStrip1.TabIndex = 10;
             this.menuStrip1.Text = "menuStrip1";
             // 
@@ -398,7 +400,7 @@
             // progressBar_EXP
             // 
             this.progressBar_EXP.ForeColor = System.Drawing.SystemColors.HotTrack;
-            this.progressBar_EXP.Location = new System.Drawing.Point(403, 3);
+            this.progressBar_EXP.Location = new System.Drawing.Point(935, 3);
             this.progressBar_EXP.Margin = new System.Windows.Forms.Padding(2);
             this.progressBar_EXP.Name = "progressBar_EXP";
             this.progressBar_EXP.Size = new System.Drawing.Size(133, 15);
@@ -411,7 +413,7 @@
             this.grBox_Workers.Controls.Add(this.ProcessingWorkers);
             this.grBox_Workers.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.grBox_Workers.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.grBox_Workers.Location = new System.Drawing.Point(135, 170);
+            this.grBox_Workers.Location = new System.Drawing.Point(142, 523);
             this.grBox_Workers.Name = "grBox_Workers";
             this.grBox_Workers.Size = new System.Drawing.Size(69, 92);
             this.grBox_Workers.TabIndex = 8;
@@ -428,7 +430,7 @@
             this.GRBox_Solar.Controls.Add(this.label17);
             this.GRBox_Solar.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
             this.GRBox_Solar.ForeColor = System.Drawing.SystemColors.ActiveCaption;
-            this.GRBox_Solar.Location = new System.Drawing.Point(420, 31);
+            this.GRBox_Solar.Location = new System.Drawing.Point(121, 27);
             this.GRBox_Solar.Name = "GRBox_Solar";
             this.GRBox_Solar.Size = new System.Drawing.Size(124, 103);
             this.GRBox_Solar.TabIndex = 8;
@@ -492,7 +494,7 @@
             this.BackColor = System.Drawing.SystemColors.ActiveCaptionText;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.ClientSize = new System.Drawing.Size(544, 297);
+            this.ClientSize = new System.Drawing.Size(1071, 631);
             this.Controls.Add(this.GRBox_Solar);
             this.Controls.Add(this.grBox_Workers);
             this.Controls.Add(this.progressBar_EXP);
