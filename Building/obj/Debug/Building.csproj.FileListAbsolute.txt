@@ -1,0 +1,6 @@
+C:\Users\Nate\source\repos\MoonBaseManagement\Building\bin\Debug\Building.dll
+C:\Users\Nate\source\repos\MoonBaseManagement\Building\bin\Debug\Building.pdb
+C:\Users\Nate\source\repos\MoonBaseManagement\Building\obj\Debug\Building.csproj.AssemblyReference.cache
+C:\Users\Nate\source\repos\MoonBaseManagement\Building\obj\Debug\Building.csproj.CoreCompileInputs.cache
+C:\Users\Nate\source\repos\MoonBaseManagement\Building\obj\Debug\Building.dll
+C:\Users\Nate\source\repos\MoonBaseManagement\Building\obj\Debug\Building.pdb

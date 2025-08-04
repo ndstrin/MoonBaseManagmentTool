@@ -1,0 +1,6 @@
+C:\Users\Nate\source\repos\ndstrin\MoonBaseSim\People\bin\Debug\People.dll
+C:\Users\Nate\source\repos\ndstrin\MoonBaseSim\People\bin\Debug\People.pdb
+C:\Users\Nate\source\repos\ndstrin\MoonBaseSim\People\obj\Debug\People.csproj.AssemblyReference.cache
+C:\Users\Nate\source\repos\ndstrin\MoonBaseSim\People\obj\Debug\People.csproj.CoreCompileInputs.cache
+C:\Users\Nate\source\repos\ndstrin\MoonBaseSim\People\obj\Debug\People.dll
+C:\Users\Nate\source\repos\ndstrin\MoonBaseSim\People\obj\Debug\People.pdb
